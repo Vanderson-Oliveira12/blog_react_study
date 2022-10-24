@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1.8rem;
+}
+
+.nav-search {
+    padding: 1rem;
+}
+
+.nav-search input {
+    padding: 1rem;
+    border: none;
+}
+
+.nav-search input:focus {
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+}
+
+.nav-links a {
+    padding: 1rem;
+    font-weight: 400;
+    color: #000000;
+    transition: .5s ease;
+}
+
+.nav-links a:hover{
+    opacity: .5;
+}
+
+.nav-links img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
