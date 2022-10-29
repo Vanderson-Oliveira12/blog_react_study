@@ -1,56 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     font-size: 62.5%;
     /* 1rem equivale a 10px */
 }
 
-body{
+body {
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
     width: 100%;
 }
 
-section{
+section {
     width: 90%;
     max-width: 1281px;
     margin: 0 auto;
     padding: 2.4rem 0;
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100%;
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        height: auto;
+    }
 }
 
-img{
+img {
     display: block;
     max-width: 100%;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     display: block;
 }
 
 /* Section */
 
-.container_small_post{
+.container_small_post {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2.4rem;
 }
-

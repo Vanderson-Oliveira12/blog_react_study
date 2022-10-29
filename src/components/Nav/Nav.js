@@ -15,33 +15,45 @@ export default function Nav() {
         </label>
         <input type="search" id="search" name="search" placeholder="Pesquisar..."></input>
       </div>
-      <ul className={style.nav_links}>
-        <li>
-          <a href="/" title="Inicio">
-            Inicio
-          </a>
-        </li>
-        <li>
-          <a href="/" title="Artigos">
-            Artigos
-          </a>
-        </li>
-        <li>
-          <a href="/" title="Instagram">
-            <img alt="Instagram" src={instagramIco}></img>
-          </a>
-        </li>
-        <li>
-          <a href="/" title="Twitter">
-            <img alt="Twitter" src={twitterIco}></img>
-          </a>
-        </li>
-        <li>
-          <a href="/" title="Linkedin">
-            <img src={linkedinIco} alt="Linkedin"></img>
-          </a>
-        </li>
-      </ul>
+      <button className={style.menu_burguer}>
+        <div className={style.bar}></div>
+        <div className={style.bar}></div>
+        <div className={style.bar}></div>
+      </button>
+      <div className={style.nav_all_links}>
+        <ul className={style.nav_links}>
+          <li className={style.nav_links_close}>
+            &times;
+          </li>
+          <li>
+            <a href="/" title="Inicio">
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="/" title="Artigos">
+              Artigos
+            </a>
+          </li>
+        </ul>
+        <ul className={style.nav_links_social}>
+          <li>
+            <a href="/" title="Instagram">
+              <img alt="Instagram" src={instagramIco}></img>
+            </a>
+          </li>
+          <li>
+            <a href="/" title="Twitter">
+              <img alt="Twitter" src={twitterIco}></img>
+            </a>
+          </li>
+          <li>
+            <a href="/" title="Linkedin">
+              <img src={linkedinIco} alt="Linkedin"></img>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   )
 };
