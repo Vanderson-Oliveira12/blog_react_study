@@ -10,7 +10,7 @@ export default function Nav() {
     <nav className={style.nav}>
       <img src={Logo} alt="Logo HotCoffe"></img>
       <div className={style.nav_search}>
-        <label for="search">
+        <label htmlFor="search">
           <img src={Search} alt="Pesquisar"></img>
         </label>
         <input type="search" id="search" name="search" placeholder="Pesquisar..."></input>

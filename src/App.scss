@@ -18,6 +18,13 @@ body{
     width: 100%;
 }
 
+section{
+    width: 90%;
+    max-width: 1281px;
+    margin: 0 auto;
+    padding: 2.4rem 0;
+}
+
 .container{
     height: 100vh;
     width: 100%;
@@ -35,5 +42,15 @@ li{
 a{
     text-decoration: none;
     display: block;
+}
+
+/* Section */
+
+.container_small_post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.4rem;
 }
 

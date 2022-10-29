@@ -1,0 +1,45 @@
+@use '../../../style/variables.scss';
+
+.giant_card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.6rem 0;
+}
+
+.giant_card_content {
+    flex: 1 0 50%;
+    background: #F7FAFC;
+    color: variables.$text-color-white;
+    padding: 9rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    h2 {
+        color: #000;
+        font-size: 4.2rem;
+        width: 30rem;
+    }
+
+    a {
+        color: #000;
+        transition: .5s ease;
+        border-bottom: 1px solid transparent;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    a:hover {
+        border-bottom: 1px solid #000;
+    }
+
+}
+
+.giant_card_date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.giant_card_image {
+    flex: 1 0 50%;
+}
