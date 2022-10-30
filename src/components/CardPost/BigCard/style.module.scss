@@ -45,6 +45,23 @@
             border-bottom: 1px solid #000;
         }
         
+    @include medias.small{
+        &{
+            padding: 2rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+        }
+
+        a{
+            font-size: 1.4rem;
+        }
+    }
 }
 
 .big_card_date{

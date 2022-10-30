@@ -11,6 +11,10 @@
 
     @include medias.small{
         padding-top: 1.2rem;
+
+            & > img{
+                width: 82px;
+            }
     }
 
 }
@@ -70,6 +74,7 @@ input[type="search"]::-webkit-search-results-decoration {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s ease;
 
     @include medias.small {
         flex-direction: column;
@@ -94,10 +99,6 @@ input[type="search"]::-webkit-search-results-decoration {
     a:hover {
         opacity: .5;
     }
-}
-
-.nav_all_links_active {
-    right: 0;
 }
 
 .nav_links {

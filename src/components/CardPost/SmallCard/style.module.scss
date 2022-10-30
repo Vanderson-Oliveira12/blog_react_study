@@ -45,7 +45,14 @@
     }
 
     @include medias.small{
-        gap: 1.8rem;
+
+        &{
+            gap: 1.8rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
     }
 }
 

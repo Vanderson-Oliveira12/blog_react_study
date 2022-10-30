@@ -6,6 +6,17 @@ import linkedinIco from '../../svg/LINKEDIN.svg';
 import Search from '../../svg/search.svg';
 
 export default function Nav() {
+
+  function openMenu() {
+    let navElement = document.querySelector('ul')
+    navElement.style.right = 0;
+  }
+
+  function closeMenu(){
+    let navElement = document.querySelector('ul')
+    navElement.style.right = "-100%";
+  }
+
   return (
     <nav className={style.nav}>
       <img src={Logo} alt="Logo HotCoffe"></img>
@@ -15,14 +26,14 @@ export default function Nav() {
         </label>
         <input type="search" id="search" name="search" placeholder="Pesquisar..."></input>
       </div>
-      <button className={style.menu_burguer}>
+      <button onClick={openMenu} className={style.menu_burguer}>
         <div className={style.bar}></div>
         <div className={style.bar}></div>
         <div className={style.bar}></div>
       </button>
-      <div className={style.nav_all_links}>
+      <ul className={style.nav_all_links}>
         <ul className={style.nav_links}>
-          <li className={style.nav_links_close}>
+          <li onClick={closeMenu} className={style.nav_links_close}>
             &times;
           </li>
           <li>
@@ -53,7 +64,7 @@ export default function Nav() {
             </a>
           </li>
         </ul>
-      </div>
+      </ul>
     </nav>
   )
 };
